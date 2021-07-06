@@ -177,21 +177,6 @@ void tampil(void)
     glVertex3f(13, 2.5, -7.1); glVertex3f(16, 2.5, -7.1); glVertex3f(16, 0.5, -7.1); glVertex3f(13, 0.5, -7.1);
     glEnd();
 
-    //pintu
-    glBegin(GL_QUADS);
-    glColor3f(0.2,0,0);
-    glVertex3f(-30.1, -15, 2); glVertex3f(-30.1, -15, -2); glVertex3f(-30.1, -5, -2); glVertex3f(-30.1, -5, 2);
-    glEnd();
-
-    //pintu dalam
-    glBegin(GL_QUADS);
-    glColor3f(0.2, 0.0, 0.0);
-    glVertex3f(-14.9, -15, -2);
-    glVertex3f(-14.9, -15, 2);
-    glVertex3f(-14.9, -7, 2);
-    glVertex3f(-14.9, -7, -2);
-    glEnd();
-
     //lantai g1
     glBegin(GL_QUADS);
     glColor3f(0.0, 0.0, 0.0);
@@ -629,6 +614,21 @@ void tampil(void)
     glVertex3f(17.9, -8, 2);
     glVertex3f(17.9, -11, 0);
     glVertex3f(17.9, -8, -2);
+    glEnd();
+
+    //pintu
+    glBegin(GL_QUADS);
+    glColor3f(0.2,0,0);
+    glVertex3f(-30.1, -15, 2); glVertex3f(-30.1, -15, -2); glVertex3f(-30.1, -5, -2); glVertex3f(-30.1, -5, 2);
+    glEnd();
+
+    //pintu dalam
+    glBegin(GL_QUADS);
+    glColor3f(0.2, 0.0, 0.0);
+    glVertex3f(-14.9, -15, -2);
+    glVertex3f(-14.9, -15, 2);
+    glVertex3f(-14.9, -7, 2);
+    glVertex3f(-14.9, -7, -2);
     glEnd();
 
     glPopMatrix();
